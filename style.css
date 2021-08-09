@@ -1,0 +1,259 @@
+body {
+ background-color: #131313;
+ font-family: sans-serif;
+}
+
+ #hero-section{
+
+  /*Added rgba for dimming gradient on background images*/
+  background-image: linear-gradient(rgba(10, 10, 100, 0.01), rgba(10, 0, 0, 0.03)), url('https://wallpapercave.com/wp/wp2844038.jpg');
+
+  /* background-image: linear-gradient(rgba(10, 10, 100, 0.01), rgba(10, 0, 0, 0.03)), url('https://images.unsplash.com/photo-1590959651373-a3db0f38a961?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=937&q=80'); */
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  min-height: 90vw; 
+  width: 100%;
+  box-shadow: 0 6px 5px 0 #83837e; 
+  /*Above this is the hero section we coded!*/
+
+  /* This should be an image. */
+  background-color: white;
+  /* Change this values to work for you. */
+  padding: clamp(100px, 20vh, 200px) 0;
+}
+
+
+#profile-img {
+  background-image: url('https://i.imgur.com/No2mwGB.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #C5C6C7;
+  padding: calc(20px + 10px);
+
+  /* Change this values to work for you. */
+  /* margin: clamp(10px, 20vh, 100px) auto; */
+  
+  /* This should be an image */
+  background-color: #0B0C10;
+  /* Change this values to work for you. */
+  height: clamp(100px, 50vh, 200px);
+  width: clamp(100px, 50vh, 200px);
+  border-radius: 100px;
+} 
+  .profile-text h2{
+  font-size: clamp(1.0rem, 6.0vw, 10.0rem);
+  text-shadow: 2.5px 2.5px #232525;
+  }
+
+   .profile-text h3{
+  font-size: clamp(1.0rem, 3.0vw, 8.0rem);
+  text-shadow: 2.0px 2.0px #232525;
+  }
+
+  .profile-text {
+  position: absolute;
+  top: 88%;
+  left:50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: #C5C6C7;
+ 
+  }
+
+/*NAVIGATION BAR*/
+.navbar {
+  width: 100%;
+  min-height: 2.5em;
+  box-shadow: 0 2px 10px 0 #89c2d9; 
+}
+/* #navigation {
+  color: #00798c;
+}
+#navigation:hover {
+  color: #C5C6C7;
+} */
+
+.devicon-coffeescript-original {
+  font-size: 1.75em;
+}
+.navbar i{
+  color: #00798c;
+}
+
+.navbar i:hover {
+  color: #C5C6C7;
+}
+
+
+/*MISSION/ABOUT SECTION*/
+
+#mission-section h3{
+  font-size: clamp(1.0rem, 2.75rem, 1026px);
+  text-shadow: 1.25px 1.25px #89c2d9;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #C5C6C7;
+}
+.about {
+  color: #C5C6C7;
+  text-shadow: 0.5px 0.5px #89c2d9;
+  font-size: clamp(0.5rem, 1.25rem, 3.0rem);
+  margin: auto;
+  text-align: center;
+}
+.about:hover {
+
+}
+
+.mission-pic {
+  border-radius: 10px;
+  border: 0.5px solid #31383b;
+  filter: brightness(95%);
+  max-width: 100%;
+  max-height: auto;
+
+}
+
+/*SKILLS SECTION*/
+
+#skills-section h3 {
+  color: #C5C6C7;
+  text-align: center;
+  font-size: clamp(1.0rem, 2.75rem, 1026px);
+  text-shadow: 1.25px 1.25px #89c2d9;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+
+ .i-skillz {
+  font-size: clamp(1.25rem, 2.0vw, 7.0rem);
+  text-shadow: 0.5px 0.5px #89c2d9;
+  color: #C5C6C7;
+
+}
+.skills {
+  text-align: center;
+  font-size: clamp(1.0rem, 4.0rem, 6.0rem);
+}
+/*Started here on hover text*/
+.java:hover {
+  display: none;
+}
+
+.java:hover ~ #java-text {
+  font-size: clamp(1.0rem, 4.0rem, 6.0rem);
+  display: block;
+  /* visibility: visible; */
+  color:red;
+}
+/*Ended here on hover skills text*/
+
+/*INPIRATION SECTION*/
+#inspiration-section h3 {
+  font-size: clamp(1.0rem, 2.75rem, 1026px);
+  letter-spacing: 0.05em;
+  text-shadow: 1.25px 1.25px #89c2d9;
+  text-align: center;
+  color: #C5C6C7;
+}
+#inspiration-section p {
+  color: #C5C6C7;
+  text-shadow: 2.5px 2.5px #131313;
+  filter: brightness(100%);
+  z-index: 1;
+}
+.carousel-indicators .btn{
+  width: clamp(1.0rem, 6.0vw, 8.0rem);
+  background-color:#00798c;
+  border: 1px solid white;
+}
+
+.carousel-item img{
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  filter: brightness(60%);
+  background-image: linear-gradient(to bottom, transparent, white);
+  
+}
+
+/*CONTACT SECTION*/
+
+#contact-section h3 {
+  font-size: clamp(1.0rem, 2.75rem, 1026px);
+  letter-spacing: 0.05em;
+  text-shadow: 1.25px 1.25px #89c2d9;
+  text-align: center;
+  color: #C5C6C7;
+}
+
+ .contact-list {
+  font-size: clamp(2.5vw, 10.5vw, 4.5vw);
+  text-align: center;
+  background: #131313;
+  margin: auto;
+  border: none;
+  text-decoration: none;
+}
+.contact-list a{
+  text-decoration: none;
+}
+.contact-list i {
+  padding: 7px;
+  background: #131313;
+  font-size: clamp(1.0rem, 4.0rem, 6.0rem);
+
+   
+/* font-size: clamp(1.0rem, 6.0vw, 10.0rem); */
+  color:#00798c;
+}
+.contact-list i:hover{
+  color: #C5C6C7;
+  font-size: clamp(2.0rem, 9.0vw, 11.0rem);
+}
+
+
+/**SCROLLBAR*/
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #00798c;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid grey;  /* creates padding around scroll thumb */
+}
+
+
+/*Bottom Elements*/
+
+footer {
+  text-shadow: 0.25px 0.25px #89c2d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  color: #C5C6C7;
+}
+hr {
+  border-top: 2.0px solid #C5C6C7;
+  box-shadow: 0 2.0px 10px 0 #89c2d9; 
+  /* color: #C5C6C7; */
+}
